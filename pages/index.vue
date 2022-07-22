@@ -15,12 +15,12 @@
 import { TideObject, WeatherObject } from '~/types'
 
 const { data: times} = await useFetch<TideObject[]>(
-  "https://beach-safe.netlify.app/.netlify/functions/tidal-events",
+  "https://beach-safer.netlify.app/.netlify/functions/tidal-events",
   { parseResponse: JSON.parse }
 );
 
 const { data: weather } = await useFetch<WeatherObject>(
-  "https://beach-safe.netlify.app/.netlify/functions/current-weather",
+  "https://beach-safer.netlify.app/.netlify/functions/current-weather",
   { parseResponse: JSON.parse }
 );
 </script>
